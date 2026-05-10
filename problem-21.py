@@ -1,0 +1,21 @@
+#Find LCM
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+max_num = max(a, b)
+
+while True:
+    
+    if max_num % a == 0 and max_num % b == 0:
+        print("LCM is:", max_num)
+        break
+
+    max_num += 1
+
+    '''
+    output:-
+   Enter first number: 4
+Enter second number: 6
+LCM is: 12
+    '''

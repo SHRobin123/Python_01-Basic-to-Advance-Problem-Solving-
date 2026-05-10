@@ -1,0 +1,24 @@
+#Generator Function
+#Iterator Class
+class MyNumbers:
+    def __iter__(self):
+        self.a = 1
+        return self
+
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x
+
+obj = MyNumbers()
+it = iter(obj)
+
+print(next(it))
+print(next(it))
+
+'''
+output:- 
+
+1
+2
+'''
